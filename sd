@@ -1,0 +1,291 @@
+<br>
+<h1></h1>
+<h1 style="text-align: center;"><span style="font-size:16px;"><strong><span style="font-size: 20pt;">Калькулятор веса мебельных фасадов</span></strong><span style="font-size: 20pt;">.</span></span></h1>
+<p style="text-align: center;">
+</p>
+<p style="text-align: center;">
+</p>
+<p style="text-align: center;">
+ <span style="font-size: 15pt;">Для расчёта&nbsp;веса детали: выберете материал.</span><span style="font-size: 15pt;"> </span><span style="font-size: 15pt;"> </span><br>
+ <span style="font-size: 15pt;"> </span><span style="font-size: 15pt;"> </span><span style="font-size: 15pt;"> </span><span style="font-size: 15pt;">И введите размеры&nbsp;- ширину, высоту и толщину детали. </span><span style="font-size: 15pt;"> </span><span style="font-size: 15pt;"> </span><br>
+ <span style="font-size: 15pt;"> </span><span style="font-size: 15pt;"> </span><span style="font-size: 15pt;"> </span><span style="font-size: 15pt;">Нажмите на кнопку "Рассчитать."&nbsp;</span>
+</p>
+<p style="text-align: center;">
+ <i><span style="font-size: 13pt;">+ При наличии ручки прибавить её вес к </span><span style="font-size: 17.3333px;">получившемуся</span><span style="font-size: 13pt;">&nbsp;значению!&nbsp;</span></i>
+</p>
+<p style="text-align: center;">
+	 &nbsp;
+</p>
+<p style="text-align: center;">
+</p>
+<p style="text-align: justify;">
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+ <span style="font-size:14px;">&nbsp; &nbsp;</span>
+</p>
+<p style="text-align: center;">
+</p>
+<p>
+</p>
+<p>
+</p>
+<hr>
+<p>
+	 &nbsp;
+</p>
+ <br>
+ <style>
+*{font-family:Verdana, Geneva, sans-serif; font-size:14px;}
+div{ margin:0; padding: 0;}
+#main {width: 900px; margin: 2px auto; }
+/*#cap {width: 890px; margin:2px auto; border-bottom:solid 1px; text-align:center}*/
+#div_material  { width:820px; margin: 2px auto; }
+.material_item { display:inline-block; width: 140px; vertical-align:top; height: 150px; margin: 5px; border: solid 5px rgb(240, 240, 240); border-radius: 5px;}
+.material_item:hover {border:solid 2px  #ffae00; }
+.material_hover {border:solid 2px #ffae00;}
+#div_input {width: 510px; margin: 10px auto; }
+#table_input {  background-color:#ffae00; border:solid 2px #ffae00;  border-radius:5px;  font-family:Verdana, Geneva, sans-serif}
+#td_cap {text-align: right; width:20px; background-color:#ffae00; color:#fff; }
+#span1 {font-size:20px;}
+#span2 {font-size:12px; margin-left:40px; margin-right: 10px; vertical-align:top; line-height:25px; cursor:pointer}
+td { text-align:left; border:0;  padding:3px; font-size:1.5em; width:490px;  background-color:#fff5e1;}
+td.left { text-align:right; padding-right:120px;  }
+td.second {background-color:#fdefd2;}
+input {font-size: 1.2em; width: 3em; border:solid 0px #ffae00; color:#ffae00; border-radius:5px;  -moz-appearance: textfield; }
+input::-webkit-inner-spin-button {display: none;}
+#div_submit { width:145px; margin:10px auto; }
+#div_result {display:none; border-radius:10px; width:510px; height:auto; /*top:175px;*/ background-color:#fff; /*position:absolute;*/ border:solid 3px #ffae00;}
+#results td{ background-color:#fff; text-align:center; width: 500px; }
+#results { background-color:#fff; width:510px;  margin: 20px auto;}
+#calc_cap {display:inline-block;  line-height:25px; width:400px; margin:3px 5px 5px 40px; font-size:20px; text-align:center; background-color:#ffae00; color:#fff}
+#calc_close {display:inline-block;  line-height:25px; vertical-align:top; cursor:pointer; color:#fff;  }
+#cap_res { background-color:#ffae00}
+#div_img {display:block; margin:10px auto; width:140px; height:140px; background-color:#fff}
+#div_calc { font-size:18px;  margin: 0 auto 15px; text-align:center}
+#ans1, #ans2{ font-size:18px;}
+#ans3 { font-size:24px; color:#ffae00}
+#wrong{ display:none; text-align:center;}
+.knopka {  color: #fff; font-size:1.2em; cursor:pointer;text-decoration: none; user-select: none; background: #ffae00; padding: .7em 1.5em; outline: none; border-radius:5px;font-family:Verdana, Geneva, sans-serif} 
+.knopka:hover { background: #d28f00;  } 
+.knopka:active { background: #d28f00; } 
+#mdf { background-image:url(http://siblam.ru/upload/medialibrary/dd6/ydee17vd3iq68bi0essgc3ghqt9cv8lj/mdf.png)}
+#dsp {background-image:url(http://siblam.ru/upload/medialibrary/823/b68sm5ydtyzhi1i5z513ko7e88k90m60/dsp.png)}
+#glass {background-image:url(http://siblam.ru/upload/medialibrary/84e/5lv5n5kxzsofqkdt4q0hprasqw52rtxe/steklo.png)}
+#dub {background-image:url(http://siblam.ru/upload/medialibrary/871/4m8ab03tq4tew2pw0jlohb75d7t2os9a/dyb.png)}
+#sosna {background-image:url(http://siblam.ru/upload/medialibrary/8d5/41acihmxnjng5b1k564sn5hnn93tjgl0/sosna.png)}
+.material_name { margin:-30px auto; text-align:center; background-color:#; opacity:0.8;}
+</style>
+<div id="main">
+	<div id="div_material">
+		<div id="mdf" class="material_item">
+			<div class="material_name">
+				 МДФ
+			</div>
+		</div>
+		<div id="dsp" class="material_item">
+			<div class="material_name">
+				 ДСП
+			</div>
+		</div>
+		<div id="glass" class="material_item">
+			<div class="material_name">
+				 Стекло
+			</div>
+		</div>
+		<div id="dub" class="material_item">
+			<div class="material_name">
+				 Дуб
+			</div>
+		</div>
+		<div id="sosna" class="material_item">
+			<div class="material_name">
+				 Сосна <br>
+ <br>
+ <br>
+			</div>
+		</div>
+	</div>
+	<div id="div_input">
+		<div id="div_result">
+			<div id="cap_res">
+				<div id="calc_cap">
+					 Расчет
+				</div>
+				<div id="calc_close" onclick="calc_close()">
+					 закрыть
+				</div>
+			</div>
+			<div id="div_img">
+			</div>
+			<div id="div_calc">
+				 Вес панели из <span id="ans1">МДФ</span> <span id="ans2">700х700х20</span>: <br>
+ <span id="ans3">5</span> кг.
+			</div>
+		</div>
+		<table id="table_input">
+		<tbody>
+		<tr>
+			<td id="td_cap">
+				<div>
+ <span id="span1">Введите размеры фасада</span><span id="span2">очистить</span>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td class="left">
+				 Ширина:<input class="inp" id="input_length" type="number" required="required">, мм.
+			</td>
+		</tr>
+		<tr>
+			<td class="left second">
+				 Высота:<input class="inp" id="input_heigth" type="number" required="required">, мм.
+			</td>
+		</tr>
+		<tr>
+			<td class="left">
+				 Толщина:<input class="inp" id="input_width" type="number" required="required">, мм.
+			</td>
+		</tr>
+		</tbody>
+		</table>
+	</div>
+	<div id="div_submit">
+		<div class="knopka" onclick="check()">
+			 Рассчитать
+		</div>
+	</div>
+	<div id="wrong">
+		 введены неправильные размеры
+	</div>
+	 <script>
+var Panel = new Object();
+
+document.getElementById('calc_close').addEventListener('click',calc_close);
+
+for (i=0; i<document.getElementsByClassName('material_item').length; i++){
+	document.getElementsByClassName('material_item').item(i).onclick = selected;
+}
+
+for (i=0; i<document.getElementsByClassName('inp').length; i++){
+	document.getElementsByClassName('inp').item(i).onkeypress = function (e) {
+  		return !(/[А-Яа-яA-Za-z ]/.test(String.fromCharCode(e.charCode)))};	
+}
+
+document.getElementById('span2').addEventListener('click', clear);
+
+function selected() {
+	for (i=0; i<document.getElementsByClassName('material_item').length; i++){
+		document.getElementsByClassName('material_item').item(i).classList.remove('material_hover');
+	}
+	this.classList.toggle("material_hover");
+	Panel.type = this.id;
+}
+function check() {
+	Panel.length = Number(document.getElementById('input_length').value);
+	Panel.heigth = Number(document.getElementById('input_heigth').value);
+	Panel.width = Number(document.getElementById('input_width').value);
+	
+	if ((Panel.length < 6000)&&(Panel.length > 0)&&(Panel.heigth < 6000)&&(Panel.heigth > 0)&&(Panel.width < 6000)&&(Panel.width >0)&&(Panel.type != undefined)){
+		document.getElementById('wrong').style.display='none';
+		calc();
+	}
+	else if ((Panel.length >= 6000)||(Panel.length == undefined)||(Panel.length <= 0)){document.getElementById('wrong').innerHTML = 'Введена неправильная ширина!'; document.getElementById('wrong').style.display='block';}
+	else if ((Panel.heigth >= 6000)||(Panel.heigth == undefined)||(Panel.heigth <= 0)){document.getElementById('wrong').innerHTML = 'Введена неправильная высота!'; document.getElementById('wrong').style.display='block';}
+	else if ((Panel.width >= 6000)||(Panel.width == undefined)||(Panel.width <= 0)){document.getElementById('wrong').innerHTML = 'Введена неправильная толщина!'; document.getElementById('wrong').style.display='block';}
+	else if (Panel.type == undefined) {document.getElementById('wrong').innerHTML = 'Не выбран материал!'; document.getElementById('wrong').style.display='block';}
+}
+
+function calc(){
+	Panel.volume = Number(Panel.length*Panel.heigth*Panel.width/1000000000);
+	Panel.size = Panel.length+' х '+Panel.heigth+' х '+Panel.width;
+	switch (Panel.type){
+		case 'mdf': 
+		console.log('mdf'); 
+		Panel.weight = Number((Panel.volume*850).toFixed(2));
+		Panel.name = 'МДФ';
+		document.getElementById('div_img').style.backgroundImage ="url('http://siblam.ru/upload/medialibrary/dd6/ydee17vd3iq68bi0essgc3ghqt9cv8lj/mdf.png')";
+		break;
+		case 'dsp': 
+		console.log('dsp');
+		Panel.weight = Number((Panel.volume*750).toFixed(2));
+		Panel.name = 'ДСП';
+		document.getElementById('div_img').style.backgroundImage = "url('http://siblam.ru/upload/medialibrary/823/b68sm5ydtyzhi1i5z513ko7e88k90m60/dsp.png')";
+		break;
+		case 'glass': 
+		console.log('glass');
+		Panel.weight = Number((Panel.volume*2500).toFixed(2));
+		Panel.name = 'стекла';
+		document.getElementById('div_img').style.backgroundImage = "url('http://siblam.ru/upload/medialibrary/84e/5lv5n5kxzsofqkdt4q0hprasqw52rtxe/steklo.png')";
+		break;
+		case 'dub':
+		console.log('dub');
+		Panel.weight = Number((Panel.volume*680).toFixed(2));
+		Panel.name = 'дуба';
+		document.getElementById('div_img').style.backgroundImage = "url('http://siblam.ru/upload/medialibrary/871/4m8ab03tq4tew2pw0jlohb75d7t2os9a/dyb.png')";
+		break;
+		case 'sosna': 
+		console.log('sosna');
+		Panel.weight = Number((Panel.volume*550).toFixed(2));
+		Panel.name = 'сосны';
+		document.getElementById('div_img').style.backgroundImage = "url('http://siblam.ru/upload/medialibrary/8d5/41acihmxnjng5b1k564sn5hnn93tjgl0/sosna.png')";
+		break;
+		}
+	document.getElementById('ans1').innerHTML = Panel.name;
+	document.getElementById('ans2').innerHTML = Panel.size;
+	document.getElementById('ans3').innerHTML = Panel.weight;
+	document.getElementById('table_input').style.display = 'none';
+	document.getElementById('div_submit').style.display = 'none';
+	document.getElementById('div_result').style.display = "block";
+}
+
+function calc_close() {
+	document.getElementById('div_result').style.display="none";
+	document.getElementById('table_input').style.display = 'block';
+	document.getElementById('div_submit').style.display = 'block';
+}
+function clear() {
+	for (i=0; i<document.getElementsByTagName('input').length; i++){
+		document.getElementsByTagName('input').item(i).value='';
+	}
+	for (var name in Panel) {
+  		delete Panel[name] ;
+	}
+	for (i=0; i<document.getElementsByClassName('material_item').length; i++){
+		document.getElementsByClassName('material_item').item(i).classList.remove('material_hover');
+	}
+}
+</script>
+</div>
+ <br>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<hr>
+<p style="text-align: center;">
+ <br>
+</p>
+<p style="text-align: center;">
+ <br>
+</p>
+<p style="text-align: center;">
+	 Информация является справочной, для значений по материалам МДФ, ДСП, Дуб, Сосна, возможна погрешность в пределах 10%. Это связано с уровнем влажности, плотностью материала, и покрытием (МДФ и ДСП) у различных производителей плит. При выборе подъёмного механизма для фасада, учитывайте вес мебельной ручки, в пересекающихся областях выбирайте механизм с большей грузоподъёмностью
+</p>
+<p style="text-align: center;">
+ <br>
+</p>
+<p style="text-align: center;">
+ <br>
+</p>
+<p style="text-align: center;">
+ <br>
+</p>
+<p style="text-align: center;">
+ <br>
+</p>
